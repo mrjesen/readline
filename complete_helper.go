@@ -135,8 +135,7 @@ func doInternal(p PrefixCompleterInterface, line []rune, pos int, origLine []run
 					goNext = true
 				}
 			} else {
-				if runes.HasPrefix(childName, line) {
-					var childNameLower = []rune{}
+				var childNameLower = []rune{}
 				for _, v := range childName {
 					if int(v) >= 65 && int(v) <= 90 {
 						v += 32
